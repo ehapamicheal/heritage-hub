@@ -1,0 +1,167 @@
+.verification_container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.verification_container .verification_right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg-color);
+    padding-top: 5rem;
+}
+
+
+.verification_container .verification_right .head {
+    text-align: center;
+}
+
+.verification_container .verification_right .head h1 {
+    font-family: "Mona Sans", sans-serif; 
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.015em;
+    color: var(--black);
+}
+
+.verification_container .verification_right .head p {
+    font-family: "Mona Sans", sans-serif; 
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: var(--gray-p);
+    margin-top: 0.2rem;
+}
+
+.verification_container .verification_right .form_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    width: 70%;
+}
+
+.verification_container .verification_right .form_wrapper form .verify_input_box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.verification_container .verification_right .form_wrapper form .verify_input_box .pin_inputs {
+    font-family: "Mona Sans", sans-serif; 
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black);
+    background: var(--white-color);
+    width: 55px;
+    height: 57px;
+    border: none;
+    border: 1px solid var(--gray-p);
+    border-radius: var(--border-radius-0-4);
+    text-align: center;
+}
+
+.verification_container .verification_right .form_wrapper form .verify_input_box .pin_inputs:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+.verification_right .form_wrapper form .p1 {
+    font-family: "Mona Sans", sans-serif; 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: -0.015em;
+    color: var(--light-dark);  
+    margin-top: 0.6rem;  
+}
+
+.verification_right .form_wrapper form .p1 .resend_link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.verification_right .form_wrapper form .p1 .resend_link:hover {
+    text-decoration: underline;
+}
+
+
+
+/*==================== MEDIA STYLES GOES HERE ======================*/
+@media (max-width: 900px) {
+    .verification_container {
+       flex-direction: column;
+    }
+
+    .verification_container .verification_right {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .verification_container .verification_right .form_wrapper form .verify_input_box {
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 580px) {
+    .verification_container .verification_right .form_wrapper {
+        width: 100%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .verification_container .verification_right {
+        padding-top: 3rem;
+    }
+
+    .verification_container .verification_right .form_wrapper form .verify_input_box {
+        gap: 1.2rem;
+    }
+
+    .verification_container .verification_right .form_wrapper form .verify_input_box .pin_inputs {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+@media (max-width: 426px) {
+    .verification_container .verification_right .head h1 { 
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    
+    .verification_container .verification_right .head p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .verification_container .verification_right .form_wrapper form .verify_input_box {
+        gap: 1rem;
+    }
+
+    .verification_container .verification_right .form_wrapper form .verify_input_box .pin_inputs {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .verification_container .verification_right .form_wrapper form .verify_input_box .pin_inputs {
+        width: 100%;
+    }
+
+    .verification_right .form_wrapper form .p1 { 
+        font-size: 15px;
+    }
+}

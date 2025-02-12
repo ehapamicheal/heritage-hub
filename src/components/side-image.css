@@ -1,0 +1,25 @@
+.login_left {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.login_left img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+
+/*==================================== MEDIA STYLES GOES HERE ==================================*/
+@media (max-width: 900px) {
+    .login_left {
+        display: none;
+    }
+    
+}

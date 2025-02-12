@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*---------- COLORS ----------*/
+  --primary-color: #03C503;
+  --primary-variant: #009600;
+  --gray-p: #8C8C8C;
+  --black: #000000;
+  --light-dark: #535353;
+  --light-dark2: #4A544A;
+  --white-color: #FFFFFF;
+  --light-gray: #D9D9D9;
+  --icon-gray: #D0D0D0;
+  --bg-color: #F6F6F6;
+  --bg-color2: #CEFFCE;
+  --bg-color3: #4CAF50;
+  --search-bg: #F4F6F0;
+  --btn-line: #004600;
+  --ptag-color: #002600;
+  --text-color: #101010;
+  --dark-red: #FF0000;
+  --cup-color: #9D04BF;
+  --small-color: #0E0E0E;
+
+
+  
+  --secondary-color: #808080;
+
+
+  /*---------- BORDER RADUIS ----------*/
+  --border-radius-0-4: 0.4rem;
+  --border-radius-1: 1rem;
+  --border-radius-5: 5rem;
+  --border-radius-2: 2rem;
+  --border-radius-50: 50%;
+
+
+  /*---------- TRANSITIONS ----------*/
+  --transition-500: all 500ms ease;
+  --transition-300: all 300ms ease;
+  --transition-200: all 200ms ease;
+
+
+  /*---------- WIDTH ----------*/
+  --container-width-lg: 96%;
+  --container-width-md: 100%;
+  --container-width-center: 90%;
+
+}
+
+.container {
+  width: var(--container-width-lg);
+}
+
+.second_container {
+  width: var(--container-width-center);
+}
+
+.testing-container {
+  margin: 2rem;
+}
+
+.submit-btn {
+  font-family: "Mona Sans", sans-serif; 
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: var(--white-color);   
+  cursor: pointer;
+  background: var(--primary-color);
+  border-radius: var(--border-radius-2);
+  text-align: center;
+  padding: 0.7rem 0.6rem;
+  width: 100%;
+  border: none;
+  margin-top: 2rem;
+  transition: all .3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: var(--light-gray); 
+  color: var(--primary-color);
+}
+
+.skip_link {
+  font-family: "Mona Sans", sans-serif; 
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  color: var(--primary-color);  
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-2);
+  border: 1px solid var(--primary-color);
+  text-decoration: none;
+  width: 100%;
+  padding: 0.8rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.skip_link:hover {
+  border: 1px solid var(--light-gray);
+  background: var(--light-gray); 
+}
+
+.submit_profile_btn {
+  font-family: "Mona Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 19.2px;
+  letter-spacing: -0.015em;
+  color: var(--white-color);
+  background: var(--primary-variant);
+  padding: 0.8rem 2rem;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius-2);
+  transition: all 0.3s ease-in-out;
+}
+
+.submit_profile_btn:hover {
+  background: var(--light-gray); 
+  color: var(--primary-variant);
+}
+
+
+
+/*==================== MEDIA STYLES GOES HERE ======================*/
+@media (max-width: 426px) {
+  .submit-btn,
+  .skip_link,
+  .submit_profile_btn {
+    font-size: 1.100rem;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .submit-btn,
+  .skip_link,
+  .submit_profile_btn  {
+    font-size: 1rem;
+  }
+}
+
+

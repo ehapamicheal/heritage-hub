@@ -1,0 +1,246 @@
+.sign_up_container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.sign_up_container .sign_up_right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--bg-color);
+    overflow: auto;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+.sign_up_container .sign_up_right::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
+
+.sign_up_container .sign_up_right .sign_up_main {
+    width: 80%;
+}
+
+.sign_up_container .sign_up_right .head {
+    text-align: center;
+}
+
+.sign_up_container .sign_up_right .head h1 {
+    font-family: "Mona Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.015em;
+    color: var(--black);
+}
+
+.sign_up_container .sign_up_right .head h1 span {
+    color: var(--primary-color);
+}
+
+.sign_up_container .sign_up_right .head p {
+    font-family: "Mona Sans", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: var(--gray-p);
+    margin-top: 0.5rem;
+}
+
+.sign_up_container .sign_up_contents {
+    margin-top: 2rem;
+}
+
+.sign_up_contents form .first_box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sign_up_contents form .first_box .input_box {
+    width: 100%;
+}
+
+.sign_up_contents form .first_box .input_box label {
+    display: block;
+    font-family: "Mona Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: -0.015em;
+    color: var(--light-dark);   
+    margin-bottom: 0.5rem;
+}
+
+.sign_up_contents form .first_box .input_box input {
+    font-family: "Mona Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: -0.015em;
+    color: var(--black);
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    border-radius: var(--border-radius-0-4);
+    border: none;
+    border: 1px solid var(--light-gray);
+}
+
+.sign_up_contents form .first_box .input_box input::placeholder {
+    font-family: "Mona Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: -0.015em;
+    color: var( --light-gray);
+}
+
+.sign_up_contents form .first_box .input_box input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+.sign_up_contents form .second_box  {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.sign_up_contents form .second_box .input_box2 {
+    position: relative;
+}
+
+.show_and_hide_box {
+    position: absolute;
+    right: 1rem;
+    top: 2.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 30;
+}
+
+.sign_up_contents form .second_box .show_and_hide_box .show_eye,
+.sign_up_contents form .second_box .show_and_hide_box .hide_eye {
+    font-size: 1.2rem;
+    color: var(--icon-gray);
+    transition: 0.3s ease;
+}
+
+.sign_up_contents form .second_box .input_box2 label {
+    display: block;
+    font-family: "Mona Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: -0.015em;
+    color: var(--light-dark);   
+    margin-bottom: 0.5rem;
+}
+
+.sign_up_contents form .second_box .input_box2 input {
+    font-size: 1rem;
+    font-family: "Mona Sans", sans-serif;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: -0.015em;
+    color: var(--black);
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    border-radius: var(--border-radius-0-4);
+    border: none;
+    border: 1px solid var(--light-gray);
+}
+
+
+.sign_up_contents form .second_box .input_box2 input::placeholder {
+    font-family: "Mona Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: -0.015em;
+    color: var( --light-gray);
+}
+
+.sign_up_contents form .second_box .input_box2 input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+.sign_up_contents form .do_you_box {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.sign_up_contents form .do_you_box p {
+    font-family: "Mona Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: var(--black);  
+}
+
+.sign_up_contents form .do_you_box p .signup_link {
+    color: var(--primary-color);  
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.sign_up_contents form .do_you_box p .signup_link:hover {
+    text-decoration: underline;
+}
+
+
+
+/*============================== MEDIA STYLES GOES HERE ==============================*/
+@media (max-width: 900px) {
+    .sign_up_container {
+        flex-direction: column;
+    }
+
+    .sign_up_container .sign_up_right {
+        width: 100%;
+        padding-top: 3rem;
+        overflow: visible;
+    }
+
+    .sign_up_container .sign_up_right .sign_up_main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+}
+
+
+@media (max-width: 580px) {
+    .sign_up_container .sign_up_right .sign_up_main {
+        width: 100%;
+    }
+
+    .sign_up_contents form .first_box {
+        flex-direction: column;
+    }
+
+    .sign_up_container .sign_up_right .head h1 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    
+    .sign_up_container .sign_up_right .head p {
+        font-size: 1.125rem;
+        line-height: 21.6px;
+    }
+    
+}
+
+@media (max-width: 426px) {
+    .sign_up_contents form .do_you_box p {
+        font-size: 1.100rem;
+    }
+}

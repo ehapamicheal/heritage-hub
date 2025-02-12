@@ -1,0 +1,335 @@
+.cover_photo_container {
+    padding-bottom: 2rem;
+ 
+}
+
+.cover_photo_container .cover_photo_box {
+    background-color: var( --bg-color);
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../images/cover-pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.profile_photo_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4rem;
+    z-index: 10;
+}
+
+.profile_photo_wrapper .profile_upload_box {
+    background-color: var(--light-gray);
+    width: 138px;
+    height: 138px;
+    border-radius: var( --border-radius-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_photo_wrapper .profile_upload_box span {
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+.profile_photo_wrapper .profile_upload_box img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: var( --border-radius-50);
+    height: 100%;
+}
+
+.profile_photo_wrapper .profile_upload_box input {
+    display: none;
+}
+
+.profile_name_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.profile_name_box .name_box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.profile_name_box .name_box h1 {
+    font-family: "Mona Sans", sans-serif;
+    font-size: 1.875rem;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+    color: var(--black);    
+}
+
+.profile_name_box .name_box .cup_icon {
+    color: var(--cup-color);
+    font-size: 1.5rem;
+}
+
+.profile_contents_wrapper {
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.bio_wrapper {
+    margin: auto;
+    width: 50%;
+}
+
+.bio_wrapper .bio_contents {
+   background: var(--light-gray);  
+   border-radius: var(--border-radius-0-4); 
+   padding: 1rem 1rem;
+   text-align: center;
+}
+
+.bio_wrapper .bio_contents p {
+    font-family: "Mona Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: -0.015em;
+    color: var(--small-color);
+}
+
+.profile_contents_wrapper .following_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.profile_contents_wrapper .following_box .box_p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile_contents_wrapper .following_box .box_p p {
+    font-family: "Mona Sans", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 14.4px;
+    letter-spacing: -0.015em;
+    color: var(--ptag-color); 
+}
+
+.profile_contents_wrapper .following_box .box_p p span {
+    color: var( --primary-variant);
+}
+
+.profile_contents_wrapper .following_box .edit_link {
+    font-family: "Mona Sans", sans-serif; 
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: -0.015em;
+    text-decoration: none;
+    color: var(--white-color); 
+    background: var(--primary-variant);   
+    border-radius: var(--border-radius-2);
+    padding: 0.9rem 1.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.profile_contents_wrapper .following_box .edit_link:hover {
+    background: var(--light-gray); 
+    color: var(--primary-variant);
+}
+
+.saved_post_wrapper {
+    border-top: 1px solid var(--gray-p);
+    margin-top: 3rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.saved_post_wrapper .saved_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.saved_post_wrapper .saved_box p {
+    font-family: "Mona Sans", sans-serif; 
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    color: var(--ptag-color);
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.saved_post_wrapper .saved_box p.active {
+    color: var(--primary-variant);
+}
+
+.saved_post_wrapper .saved_box p.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-color: var(--primary-variant);
+    height: 0.2rem;
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
+.saved_post_wrapper .saved_box p:hover {
+    transform: scale(1.05);
+}
+
+.profile_post_images_wrapper {
+    margin-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.profile_post_images_wrapper .profile_post_image_contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 95%;
+    margin: auto;
+}
+
+.profile_post_images_wrapper .profile_post_image_contents .images_box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile_post_images_wrapper .profile_saved_post_contents p {
+    font-family: "Mona Sans", sans-serif; 
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    color: var(--ptag-color);
+}
+
+
+
+
+/*============================== MEDIA STYLES GOES HERE ==============================*/
+@media (max-width: 900px) {
+    .cover_photo_container .cover_photo_box {
+        height: 220px;
+    }
+
+    .profile_post_images_wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bio_wrapper {
+        width: 70%;
+    }
+
+    .profile_post_images_wrapper .profile_post_image_contents {
+        gap: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .cover_photo_container .cover_photo_box {
+        height: 200px;
+    }
+
+    .bio_wrapper {
+        width: 100%;
+    } 
+}
+
+@media (max-width: 490px) {
+    .profile_name_box .name_box h1 {
+        font-size: 1.700rem;  
+    }
+    
+    .profile_name_box .name_box .cup_icon {
+        font-size: 1.3rem;
+    }
+    
+    .profile_contents_wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bio_wrapper .bio_contents p {
+        font-size: 17px;
+    }
+
+    .profile_contents_wrapper .following_box .box_p p {
+        font-size: 1rem;
+    }
+    
+    .profile_contents_wrapper .following_box .edit_link {
+        font-size: 1rem;
+        padding: 0.9rem 1rem;
+    }
+
+    .saved_post_wrapper .saved_box p {
+        font-size: 1.100rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .profile_contents_wrapper .following_box .box_p p {
+        font-size: 0.9rem;
+    }
+    
+    .profile_contents_wrapper .following_box .edit_link {
+        font-size: 0.9rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .profile_contents_wrapper .following_box .box_p {
+        gap: 0.7rem;
+    }
+
+    .profile_contents_wrapper .following_box .box_p p {
+        font-size: 0.8rem;
+    }
+    
+    .profile_contents_wrapper .following_box .edit_link {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.8rem;
+    }
+    
+    .saved_post_wrapper .saved_box p {
+        font-size: 1rem;
+    }
+
+    .profile_post_images_wrapper .profile_saved_post_contents p {
+        font-size: 1rem;
+    }
+    
+
+}
